@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Properties</title>
+    <link rel="stylesheet" href="/style5.css">
+</head>
+<body>
+    <h1>Properties</h1>
+    <!-- Add the content related to checking sellers' properties here -->
+    <form action="/check-availability-button" method="get">
+        <!-- Radio buttons for property type -->
+        <br>
+        <label>Property Type:</label>
+        <input type="radio" name="property-type" value="all" id="property-type-all" checked>
+        <label for="property-type-all">All</label>
+        <input type="radio" name="property-type" value="apartment" id="property-type-apartment">
+        <label for="property-type-apartment">Apartment</label>
+        <input type="radio" name="property-type" value="villa" id="property-type-villa">
+        <label for="property-type-villa">Villa</label>
+        <input type="radio" name="property-type" value="plot" id="property-type-plot">
+        <label for="property-type-plot">Plot</label>
+        <br>
+        <label>Sort by:</label>    
+        <input type="radio" name="sort" value="low-to-high" id="sort-low-to-high">
+        <label for="sort-low-to-high">Price: low to high</label>        
+        <input type="radio" name="sort" value="high-to-low" id="sort-high-to-low">
+        <label for="sort-high-to-low">Price: high to low</label>        
+       <br>
+        <input type="submit" value="Check Availability">
+    </form>
+    
+    <script src="login.js"></script>
+</body>
+</html>

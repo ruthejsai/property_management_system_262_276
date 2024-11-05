@@ -1,0 +1,100 @@
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
+        background-image: url('https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg'); /* Replace 'your-background-image.jpg' with the actual image file name and path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Optional: Prevents the background from scrolling */
+        color: #333;
+    }
+
+    /* Reset some default browser styles */
+body, h1, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #069bf8;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.property-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the table on the page */
+    font-family: Arial, sans-serif;
+}
+
+.property-table th, .property-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.property-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.property-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.property-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.property-table tr:hover {
+    background-color: #ddd;
+}

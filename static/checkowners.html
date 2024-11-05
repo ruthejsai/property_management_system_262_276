@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Properties</title>
+    <link rel="stylesheet" href="/style5.css">
+</head>
+<body>
+    <h1>Houses</h1>
+    <!-- Form for checking owners' properties -->
+    <form action="/check-availability-house" method="get">
+        <!-- Radio buttons for house type -->
+        <br>
+        <label>House Type:</label>
+        <input type="radio" name="house-type" value="all" id="house-type-all" checked>
+        <label for="house-type-all">All</label>
+        <input type="radio" name="house-type" value="1bhk" id="house-type-1bhk">
+        <label for="house-type-1bhk">1 BHK</label>
+        <input type="radio" name="house-type" value="2bhk" id="house-type-2bhk">
+        <label for="house-type-2bhk">2 BHK</label>
+        <input type="radio" name="house-type" value="3bhk" id="house-type-3bhk">
+        <label for="house-type-3bhk">3 BHK</label>
+        
+        <!-- Radio buttons for sorting options -->
+        <br>
+        <label>Sort by:</label>    
+        <input type="radio" name="sort" value="low-to-high" id="sort-low-to-high">
+        <label for="sort-low-to-high">Price: low to high</label>        
+        <input type="radio" name="sort" value="high-to-low" id="sort-high-to-low">
+        <label for="sort-high-to-low">Price: high to low</label>        
+
+        <br>
+        <input type="submit" value="Check Availability">
+    </form>
+    
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="/style3.css">
+</head>
+<body>
+    <div class="property-registration">
+        <h1>Property Details</h1>
+        <form action="/submit-property" method="post">
+            <!-- Property details fields -->
+            <label for="area">Property Type</label>
+            <div class="property-type">
+                <input type="radio" name="property-type" value="apartment" id="property-type-apartment">
+                <label for="property-type-apartment">Apartment</label>
+            </div>
+            <div class="property-type">
+                <input type="radio" name="property-type" value="villa" id="property-type-villa">
+                <label for="property-type-villa">Villa</label>
+            </div>
+            <div class="property-type">
+                <input type="radio" name="property-type" value="plot" id="property-type-plot">
+                <label for="property-type-plot">Plot</label>
+            </div>
+
+            <label for="area">Area (sq feet):</label>
+            <input type="number" name="area" id="area" required>
+
+            <label for="price-per-sqft">Price per Square Foot:</label>
+            <input type="number" name="price-per-sqft" id="price-per-sqft" required>
+
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" required>
+
+            <!-- Phone number field -->
+            <label for="phone-number">Phone Number:</label>
+            <!-- Use the stored phone number from localStorage -->
+            <input type="tel" name="phone-number" id="phone-number" required value="">
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            // Set the phone number from localStorage
+            const storedPhoneNumber = localStorage.getItem('sellerPhoneNumber');
+            if (storedPhoneNumber) {
+                document.getElementById('phone-number').value = storedPhoneNumber;
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+body, h1, form, ul, li {
+    margin: 3;
+    padding: 10;
+}
+
+/* Set a background color for the page */
+body {
+    background-color: #71b5f1;
+    font-family: Arial, sans-serif;
+}   
+
+/* Center the registration form */
+.registration {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form header */
+.registration h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style form labels */
+.registration label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style form input fields */
+.registration input[type="text"],
+.registration input[type="number"],
+.registration input[type="tel"],
+.registration input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: .8px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.registration input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add this to style2.css */
+/* Style the checkbox container */
+.checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Adjust checkbox style */
+.checkboxes input[type="checkbox"] {
+    margin-right: 5px;
+    flex-shrink: 0;
+    width: auto;
+}
+
+/* Style the labels next to the checkboxes */
+.checkboxes label {
+    color: #333;
+}

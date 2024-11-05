@@ -1,0 +1,56 @@
+/* style2.css */
+body {
+    background-color: #71f1cd;
+    font-family: Arial, sans-serif;
+}   
+.house-registration {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e81f1f;
+    border: 10px solid #120404;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.house-registration h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.house-registration form {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-registration label {
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
+
+.house-registration input[type="radio"] {
+    margin-right: 10px;
+}
+
+.house-registration input[type="number"],
+.house-registration input[type="text"],
+.house-registration input[type="tel"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.house-registration input[type="submit"] {
+    background-color: #069bf8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.house-registration input[type="submit"]:hover {
+    background-color: #0577c6;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Buyer Registration</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <div class="registration">
+        <h1>Buyer Registration</h1>
+        <form action="/register-buyer" method="post">
+            <!-- Hidden input to specify the role -->
+            <input type="hidden" name="role" value="buyer">
+            <!-- User details fields for the Buyer -->
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required>
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" id="gender" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <!-- Radio buttons for interest -->
+            <label>Interested in:</label>
+            <div class="radio-buttons">
+                <input type="radio" name="interested" value="apartment" id="apartment">
+                <label for="apartment">Apartment</label>
+                <input type="radio" name="interested" value="plot" id="plot">
+                <label for="plot">Plot</label>
+                <input type="radio" name="interested" value="villa" id="villa">
+                <label for="villa">Villa</label>
+            </div>
+            <!-- Add other fields specific to the Buyer -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

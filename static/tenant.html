@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Tenant Registration</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <div class="registration">
+        <h1>Tenant Registration</h1>
+        <form action="/register-tenant" method="post">
+            <!-- Hidden input to specify the role -->
+            <input type="hidden" name="role" value="tenant">
+            <!-- User details fields for the Buyer -->
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required>
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" id="gender" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <!-- Radio buttons for interest -->
+            <label>Interested in:</label>
+            <div class="radio-buttons">
+                <input type="radio" name="interested" value="1BHK" id="1BHK">
+                <label for="1BHK">1BHK</label>
+                <input type="radio" name="interested" value="2BHK" id="2BHK">
+                <label for="2BHK">2BHK</label>
+                <input type="radio" name="interested" value="3BHK" id="3BHK">
+                <label for="3BHK">3BHK</label>
+            </div>
+            <!-- Add other fields specific to the Buyer -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

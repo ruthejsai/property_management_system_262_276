@@ -1,0 +1,55 @@
+/* style1.css */
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    background-color: #71f184;
+    font-family: Arial, sans-serif,bold;
+}
+
+.category-box {
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    border: 5px solid #000;
+    background-color: #069bf8;
+    flex: 1;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+}
+
+.buyer {
+    background-color: #eaf031;
+}
+
+.seller {
+    background-color: #eaf031;
+}
+
+/* Add styles for Tenant */
+.tenant {
+    background-color: #eaf031;
+}
+
+/* Add styles for Owner */
+.owner {
+    background-color: #eaf031;
+}
+
+/* Add common styles for all categories */
+.category-link.buyer,
+.category-link.seller,
+.category-link.tenant,
+.category-link.owner {
+    margin: 10px;
+}

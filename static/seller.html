@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Seller Registration</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <div class="registration">
+        <h1>Seller Registration</h1>
+        <form action="/register-seller" method="post" onsubmit="redirectToPropertyPage()">
+            <!-- Hidden input to specify the role -->
+            <input type="hidden" name="role" value="seller">
+            <!-- User details fields for the Seller -->
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required>
+            <!-- Add other fields specific to the Seller -->
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" id="gender" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function redirectToPropertyPage() {
+                // Copy the phone number to localStorage
+                const phoneNumber = document.getElementById('phone-number').value;
+                localStorage.setItem('sellerPhoneNumber', phoneNumber);
+
+                // Redirect to the property.html page after form submission
+                window.location.href = 'property.html';
+            }
+        </script>
+    </div>
+</body>
+</html>

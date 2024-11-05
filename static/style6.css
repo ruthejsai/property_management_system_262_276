@@ -1,0 +1,58 @@
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
+        background-image: url('https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg'); /* Replace 'your-background-image.jpg' with the actual image file name and path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Optional: Prevents the background from scrolling */
+        color: #333;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    color: #069bf8;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
